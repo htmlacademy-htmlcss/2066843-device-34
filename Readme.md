@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Stanislav Prokofjev](https://up.htmlacademy.ru/htmlcss/34/user/2066843).
-* Наставник: `Неизвестно`.
+* Наставник: `Антон Попов` https://htmlacademy.ru/profile/id78239.
 
 ---
 
