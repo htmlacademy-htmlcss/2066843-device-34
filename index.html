@@ -1,12 +1,160 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+  
+<head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
+    <title>device</title>
+</head>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<body>
 
-  </body>
+  <header class="main-header">
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-iyem">
+          <form class="search">
+            <input type="text" placeholder="Текст поиска" name="текст поиска">
+            <button type="submit">Найти</button>
+          </form>
+        </li>
+        <li class="navigation-item"><a class="navigation-link" href="">Войти</a> </li>
+        <li class="navigation-item"><a class="navigation-link" href="">Сравнить</a> </li>
+        <li class="navigation-item"><a class="navigation-link" href="">Корзина</a> </li>
+      </ul>
+     </nav>
+     <form class="products-list">
+       <button>Каталог товаров</button>
+     </form>
+    <nav class="navigation-main">
+     <ul class="navigation-list">
+       <li class="navigation-item"><a class="navigation-link" href="">доставка</a> </li>
+       <li class="navigation-item"><a class="navigation-link" href="">гарантия</a> </li>
+       <li class="navigation-item"><a class="navigation-link" href="">контакты</a> </li>
+     </ul>
+    </nav>
+  </header>
+
+  <main class="main-index">
+
+    <h1 class="visually-hidden">device</h1>
+
+    <section class="top-main">
+     <ul class="top-main-list">
+      <li class="top-main-item">
+      <h3>Порхает как бабочка, жалит как пчела!</h3>
+      <p>Этот обычный, на первый взгляд, квадроптер оснещен мощным лазером, замаскированным под стандартную камеру</p>
+      <button>Подробнее</button>
+       <table>
+         <tr>
+           <td>800 м</td>
+           <td>50 м</td>
+         </tr>
+         <tr>
+           <th>Дальность полета</th>
+           <th>Радиус поражения</th>
+         </tr>
+       </table>
+       </li>
+       <li class="top-main-item">
+         <h3>Худеем правильно!</h3>
+         <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+         <button>подробнее</button> 
+         <table>
+           <tr>
+             <td>48 часов</td>
+           </tr>
+           <tr>
+             <th>Без подзарядки</th>
+           </tr>
+         </table>
+       </li>
+       <li class="top-main-item">
+         <h3>Делай селфи, как Бен Стиллер! </h3>
+         <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+         <button>подробнее</button> 
+         <table>
+           <tr>
+             <td>8,5 м</td>
+             <td>5 кг</td>
+             <td>Карбон</td>
+           </tr>
+           <tr>
+             <th>Длина палки</th>
+             <th>Вес палки</th>
+             <th>Материал</th>
+          </tr>
+        </table>
+       </li>
+     </ul>
+    </section>
+
+    <section class="product-type">
+      <ul class="product-type-list">
+        <li class="product-item"><a href="#"><img>Виртуальная реальность</a></li>
+        <li class="product-item"><a href="#"><img>Моноподы для селфи</a></li>
+        <li class="product-item"><a href="#"><img>Экшн-камеры</a></li>
+        <li class="product-item"><a href="#"><img>Фитнес-браслеты</a></li>
+        <li class="product-item"><a href="#"><img>Умные часы</a></li>
+        <li class="product-item"><a href="#"><img>Квадрокоптеры</a></li>
+      </ul>
+    </section>
+
+    <section class="info">
+      <ul class="info-list">
+        <li class="info-item">доставка<h1>ДОСТАВКА</h1><p>Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно! Ведь <br>мы неплохо заработаем, поднимая его на ваш этаж.</p></li>
+        <li class="info-item">гарантия<h1>ГАРАНТИЯ</h1><p>Если из-за возгорания купленного у нас товара у вас <br>сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p></li>
+        <li class="info-item">кредит<h1>КРЕДИТ</h1><p>Залезть в долговую яму стало проще! Кредитные <br>консультанты подберут для вас наиболее выгодные <br>условия кредита. Выгодные для банка, разумеется.</p></li>
+      </ul>
+    </section>
+
+    <section class="delivery">
+      <div class="speed-delivery">
+        logo
+      </div>
+      <h3>ДОСТАВИМ РЕДКИЙ ТОВАР ПОД ЗАКАЗ</h3>
+      <button>info</button>
+    </section>
+
+    <section class="contacts">
+     <h1 class="contacts-title">О нас</h1>
+     <p class="contacts-text">Огромный выбор гаджетов не оставит равнодушным<br>гика, который есть в каждом из нас.</p>
+     <p class="contacts-text">Мы можем доставить ваш товар в самые отдалённые <br>уголки России транспортными компаниями:</p>
+     <ul class="delivery-company-list">
+       <li class="delivery-company">Меловые линии</li>
+       <li class="delivery-company">СДИК</li>
+       <li class="delivery-company">ТоксБерри</li>
+     </ul>
+     <a class="button" href="#" >ПОДРОБНЕЕ О НАС</a>
+     <h1 class="contacts-title">Контакты</h1>
+     <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. <br>Заодно сможете проверить работоспособность покупки. </p>
+     <h2 class="contacts-subtitle">Интернет-магазин «Девайс»</h2>
+     <address class="contacts-address">
+     <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+     <a class="contacts-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
+    </address>
+     <h2 class="contacts-subtitle">Время работы</h2>
+     <ul class="contacts-time">
+     <li class="contacts-time-item">пн—пт: с <time>10:00</time> до <time>22:00</time></li>
+     <li class="contacts-time-item">сб—вс: с <time>10:00</time> до <time>19:00</time></li>
+     </ul>
+     <a class="contacts-form" href="">Напишите нам</a>
+    </section>
+
+    <aside class="subscription">
+      <h1 class="subscription-title">Подпишитесь на рассылку</h1>
+      <p>Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а также акции, <br>спецпредложения и вот это вот всё.</p>
+     <form class="subscription-form" action="http://echo.htmlacademy.ru/" method="post">
+       <input type="text" name="mail-for-subscription" placeholder="Ваш e-mail">
+       <button class="button" type="submit">ПОДПИСАТЬСЯ</button>
+     </form>
+     <p class="subscription-text">Это бесплатно</p>
+    </aside>
+
+  </main>
+
+  <footer class="page-footer">
+   <section></section>>
+  </footer>
+</body>
+
 </html>
