@@ -1,55 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
+  
   <head>
     <meta charset="utf-8" />
     <title>device</title>
   </head>
 
   <body>
+    <a class="main-logo" href="index.html">
+      <img class="logo" src="#" alt="Логотип магазина 'device'."/>
+    </a>
+
     <header class="main-header">
-      <img class="header-logo" src="" alt="Логотип магазина 'device'." />
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <form class="search">
-              <input
-                type="text"
-                placeholder="Текст поиска"
-                name="текст поиска"
-              />
-              <button type="submit">Найти</button>
-            </form>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="">Войти</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="">Сравнить</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="">Корзина</a>
-          </li>
-        </ul>
-      </nav>
-      <form class="products-list">
-        <button class="button button-poduct-list">Каталог товаров</button>
+      <form class="search">
+        <input type="text" placeholder="Текст поиска" name="текст поиска"/>  
+        <button type="submit">Найти</button>
       </form>
-      <nav class="navigation-main">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="">доставка</a>
+      
+      <nav class="user-navigation">
+        <ul class="user-navigation-list">
+          <li class="user-navigation-item">
+            <img class="user-login" src="#" alt="login">
+            <a class="user-navigation-link" href="#">Войти</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="">гарантия</a>
+          <li class="user-navigation-item">
+            <img class="user-compare" src="#" alt="compare">
+            <a class="user-navigation-link" href="#">Сравнить</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="">контакты</a>
+          <li class="user-navigation-item">
+            <img class="user-busket" src="#" alt="busket">
+            <a class="user-navigation-link" href="#">Корзина</a>
           </li>
         </ul>
       </nav>
+     
+      <nav class="main-navigation">
+        <ul class="main-navigation-list">
+          <li class="main-navigation-products">
+            <button class="button button-poducts-list">
+              <ul class="products-list">Каталог товаров
+                <img class="open-products" src="#" alt="open products">
+                <li class="open-products-item">
+                  <a class="products-link" src="#">Виртуальная реальность</a>
+                </li>
+                <li class="open-products-item">
+                  <a class="products-link" src="#">Моноподы для селфи</a>
+                </li>
+                <li class="open-products-item">
+                  <a class="products-link" src="#">Экшн-камеры</a>
+                </li>
+                <li class="open-products-item">
+                  <a class="products-link" src="#">Фитнес-браслеты</a>
+                </li>
+                <li class="open-products-item">
+                  <a class="products-link" src="#">Умные часы</a>
+                </li>
+                <li class="open-products-item">
+                  <a class="products-link" src="#">Квадракоптеры</a>
+                </li>
+              </ul>
+            </button>
+          </li>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">доставка</a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">гарантия</a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">контакты</a>
+          </li>
+        </ul>
+      </nav>
+
     </header>
 
     <main class="main-index">
+
       <h1 class="visually-hidden">device</h1>
 
       <section class="top-main">
@@ -196,7 +223,7 @@
         <a class="button" href="#">ПОДРОБНЕЕ О НАС</a>
         <h1 class="contacts-title">Контакты</h1>
         <p class="contacts-text">
-          Вы можете забрать товар сами, заехав в наш офис. <br />Заодно сможете
+          Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
           проверить работоспособность покупки.
         </p>
         <h2 class="contacts-subtitle">Интернет-магазин «Девайс»</h2>
@@ -204,9 +231,7 @@
           <p class="contacts-address-text">
             Санкт-Петербург, набережная реки Карповки, 5, литера П.
           </p>
-          <a class="contacts-phone" href="tel:78128121212"
-            >+7 (812) 812-12-12</a
-          >
+          <a class="contacts-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
         </address>
         <h2 class="contacts-subtitle">Время работы</h2>
         <ul class="contacts-time">
@@ -227,16 +252,8 @@
           тест-драйвами, распаковками, а также акции, <br />спецпредложения и
           вот это вот всё.
         </p>
-        <form
-          class="subscription-form"
-          action="http://echo.htmlacademy.ru/"
-          method="post"
-        >
-          <input
-            type="text"
-            name="mail-for-subscription"
-            placeholder="Ваш e-mail"
-          />
+        <form class="subscription-form" action="http://echo.htmlacademy.ru/" method="post">
+          <input type="text" name="mail-for-subscription" placeholder="Ваш e-mail"/>
           <button class="button" type="submit">ПОДПИСАТЬСЯ</button>
         </form>
         <p class="subscription-text">Это бесплатно</p>
@@ -244,6 +261,7 @@
     </main>
 
     <footer class="footer-page">
+      
       <section class="footer-address">
         <h2 class="visually-hidden">Адрес</h2>
         <img
