@@ -673,13 +673,17 @@ footer {
 
 
 /* CATALOG.HTML */
+.catalog-main {
+    width: 1440px;
+}
+
 .catalog-header {
     width: 1079px;
     height: 85px;
     padding: 0;
     margin: 0;
     margin-top: 35px;
-    margin-left: 60px;
+    margin-left: 200px;
 }
 
 .catalog-header-title {
@@ -689,11 +693,20 @@ footer {
     font-size: 50px;
     line-height: 50px;
     color: #000000;
+    margin:0px;
+    margin-top: 35px;
 }
 
 .breadcrumbs {
-  display: flex;
-  flex-direction: row;
+    width: 432px;
+    height: 19px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 16px;
 }
 
 .breadcrumbs-link {
@@ -701,6 +714,22 @@ footer {
     line-height: 19px;
     color: #000000;
     text-decoration: none;
+}
+
+.gray-background {
+    margin-top: 35px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.catalog-filter {
+    width: 320px;
+    height: 1316px;
+    margin: 0;
+    padding: 0;
+    margin-left: 140px;
 }
 
 .catalog-products {
@@ -715,7 +744,7 @@ footer {
     color: #000000;
 }
 
-.filter, .sorting-name {
+.filter {
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -724,6 +753,32 @@ footer {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #000000;
+}
+
+.sorting {
+    width: 840px;
+    height: 70px;
+    margin: 0;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sorting-name {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.select-contol {
+    width: 141px;
+    height: 30px;
 }
 
 .sort-up-down-container {
@@ -758,6 +813,17 @@ footer {
 
 .product-list {
     background-color: #ffffff;
+    width: 840px;
+    height: 1310px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 360px;
+    height: 452px;
 }
 
 .product-card-image {
@@ -826,4 +892,3 @@ footer {
     color: #444444;
     opacity: 0.3;
  }
-
