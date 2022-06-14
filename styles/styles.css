@@ -668,7 +668,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-
+/* не работает margin-top*/
 .contacts-form {
     font-family: "Raleway";
     font-style: normal;
@@ -692,7 +692,7 @@ body {
 }
 
 .subscription-container {
-    margin: auto;
+    margin: 0 auto;
     width: 1160px;
     display: flex;
     flex-direction: row;
@@ -712,37 +712,44 @@ body {
     margin-top: 64px;
 }
 
+.subscription-text {
+  font-family: "Rubik" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  width: 560px;
+  height: 90px;
+  color: #444444;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 252px;
+  margin-top: 74px;
+}
+
 .subscription-form {
     width: 810px;
     height: 57px;
     display:flex;
     flex-direction: row;
-    align-items: flex-end;
     padding: 0px;
     margin-right: auto;
-
-}
-
-.subscription-text {
-    font-family: "Rubik" sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    width: 560px;
-    height: 90px;
-    color: #444444;
-    padding: 0px;
-    margin: 0px;
-    margin-left: 252px;
-
-
-
+    margin-top: 144px;
 }
 
 .button-subscribe {
    border: 2px solid #c4c4c4;
-}
+   width: 253px;
+   height: 57px;
+   font-family: "Raleway";
+   font-style: normal;
+   font-weight: 800;
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+   letter-spacing: 0.2em;
+   text-transform: uppercase;
+  }
 
 .green-img {
     font-family: "Rubik" sans-serif;
@@ -760,6 +767,7 @@ body {
     padding-left: 30px;
     background-position: center left;
     margin-left: auto;
+    margin-top: 157px;
 }
 
 footer {
@@ -804,7 +812,8 @@ footer {
 }
 
 .footer-nav {
-  width: 444px;
+    width: 444px;
+    height: 21px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -833,7 +842,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    margin-bottom: 61px;
+    margin-top: 62px;
 }
 
 .footer-phone {
@@ -843,6 +852,9 @@ footer {
     padding: 0;
     margin-top: 140px;
     margin-left: 183px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer-social-link {
@@ -859,6 +871,12 @@ footer {
     color: #FFFFFF;
 }
 
+.footer-htmlacademy-link {
+    width: 115px;
+    height: 33px;
+    margin-left: auto;
+}
+
 
 
 /* CATALOG.HTML */
@@ -868,9 +886,9 @@ footer {
     width: 1079px;
     height: 85px;
     padding: 0;
-    margin: 0;
+    margin: auto;
     margin-top: 35px;
-    margin-left: 200px;
+
 }
 
 .catalog-header-title {
@@ -906,9 +924,13 @@ footer {
 .gray-background {
     margin-top: 35px;
     background-color: #f0f0f0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+}
+
+.catalog-main-size {
+  display: flex;
+  width: 1100px;
+  margin: 41px auto;
+
 }
 
 .catalog-filter {
@@ -916,7 +938,6 @@ footer {
     height: 1316px;
     margin: 0;
     padding: 0;
-    margin-left: 140px;
 }
 
 .catalog-products {
@@ -942,14 +963,22 @@ footer {
     color: #000000;
 }
 
+.catalog-main-part {
+    width: 840px;
+    height: 1380px;
+    display: flex;
+    flex-direction: column;
+}
+
 .sorting {
     width: 840px;
     height: 70px;
     margin: 0;
-    padding: 20px 40px;
+    padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+
 }
 
 .sorting-name {
@@ -961,16 +990,25 @@ footer {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #000000;
+    width: 147px;
+    height: 19px;
+    margin: 0;
+    margin-left: 40px;
+
 }
 
-.select-contol {
+.select-container {
     width: 141px;
     height: 30px;
+    margin: 0;
+    margin-left: 206px;
 }
 
 .sort-up-down-container {
     width: 60px;
     height: 30px;
+    margin: 0;
+    margin-left: 206px;
 }
 
 .sort-by-up {
@@ -1001,11 +1039,20 @@ footer {
 .product-list {
     background-color: #ffffff;
     width: 840px;
-    height: 1310px;
+    height: 1310px; /*по идеи здесь не должно быть ограничений в высоте (если допустим срабатывает кнопка загрузить еще*/
+    display: flex;
+    flex-direction: column;
     margin: 0;
+}
+
+.product-card-container {
+    width: 760px;
+    height: 948px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 70px 40px 0px 40px;
+    justify-content: space-between;
 }
 
 .product-card {
@@ -1024,53 +1071,107 @@ footer {
     letter-spacing: -0.02em;
     color: #000000;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-price-card-container {
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card-title {
+    width: 220px;
+    font-family: "Rubik" sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #000000;
 }
 
 .product-card-price {
+    width: 100px;
     font-size: 18px;
     line-height: 21px;
     text-align: right;
     color: #444444;
 }
- /* не ставится размер границ*/
+/* не получается поставить тектст в центр*/
 .link-load-more {
     font-family: "Raleway", sans-serif ;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
     line-height: 19px;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    width: 760px;
+    width: 754px;
     height: 55px;
     border: 3px solid #E5E5E5;
     text-decoration: none;
+    margin: 44px auto;
 }
 
 .pagination {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     width: 760px;
     height: 71px;
     background: #EBEBEB;
+    padding: 0;
+    margin: 0;
+    margin: 44px auto;
+    list-style-type: none;
  }
 
- .pagination-next, .pagination-back {
+ .pagination-next {
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    text-decoration: none;
     color: #000000;
+    width: 141px;
+    height: 71px;
+    margin-left: 145.5px;
+    padding: 25px;
+
  }
+
+ .pagination-back {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    width: 128px;
+    height: 71px;
+    margin-right: 145.5px;
+    padding: 25px;
+ }
+
+.pagination-item {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: auto;
+}
 
  .pagination-numbers {
     font-size: 16px;
@@ -1078,4 +1179,6 @@ footer {
     text-align: center;
     color: #444444;
     opacity: 0.3;
+
+
  }
