@@ -188,12 +188,14 @@ body {
     margin: auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-top: -150px;
 }
 
 .picture-slide-container {
     width: 560px;
     height: 560px;
-    margin-top: -150px;
+
   }
 
   /*стрелки назодятся в неправильном положении,
@@ -224,11 +226,9 @@ body {
 }
 
 .info-slide-container {
-    width: 600px;
-    height: 531px;
+    width: 560px;
     display: flex;
     flex-direction: column;
-    margin-top: -150px;
 }
 
 .top-main-numbers {
@@ -251,26 +251,21 @@ body {
     font-weight: 800;
     line-height: 50px;
     font-style: normal;
-    width: 545px;
-    height: 100px;
-    margin-left: 40px;
-    margin-top: -90px;
-    margin-bottom: 0;
+    margin: 0;
+    margin-top: 121px;
+
 }
 
 .top-item-text {
-    width: 560px;
-    height: 60px;
-    margin-left: 40px;
+    margin-top: 29px;
 }
 
 .more-info-change-slide {
-    width: 560px;
-    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 40px;
+    margin:0;
+    margin-top: 51px;
 
 }
 
@@ -280,22 +275,29 @@ body {
     font-weight: 800;
     line-height: 21px;
     text-align: center;
-    vertical-align: top;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #ffe17f;
-    width: 210px;
+    width: 220px;
+}
+
+.change-item-button-circle {
+    width: 76px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .table-top-item {
-    width: 307px;
-    height: 72px;
-    margin-left: 40px;
     margin-top: 49px;
+    display: grid;
+    grid-template-columns: 140px 147px ;
+    row-gap: 12px;
+    column-gap: 20px;
 }
 
 .table-data-info {
+  margin: 0;
     font-size: 36px;
     line-height: 30px;
     text-align: left;
@@ -316,18 +318,10 @@ body {
 .product-type {
     width: 1160px;
     margin: auto;
-}
-
-
-.product-type-list {
-    height: 253px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    justify-content: space-between;
-    list-style-type: none;
-
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 160px 160px 160px 160px 160px 160px;
+    column-gap: 40px;
 }
 
 .product-type-link {
@@ -343,16 +337,12 @@ body {
 
 .product-type-item {
     background-color: #ffe17f;
+    height: 253px;
     width: 160px;
-    height: 160px;
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 40px;
 }
 
-.product-type-item:last-child {
-    margin-right: 0;
-}
 .vr-box {
     background-image: url("../images/product-type/virtual.svg");
 }
@@ -380,20 +370,38 @@ body {
 
 /* INFO*/
 .info {
-    background-color: #f0f0f0;
-    height: 289px;
+    /* background-color: #f0f0f0;
+    height: 289px; */
+    margin-top: 172px;
 }
 
 .info-container {
     width: 1160px;
     height: 319px;
-    padding: 0px;
-    margin: auto;
+    margin: 0 auto;
+    display: flex;
+
+
+}
+
+.info-link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    height: 190px;
+    margin: 65px 0;
+
+
+
+
 }
 
 .info-list {
+    width: 694px;
+    margin: 72.5px 63px 72.5px auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .info-list-header {
@@ -406,7 +414,7 @@ body {
 }
 
 
-.info-item {
+.info-link {
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -416,14 +424,8 @@ body {
     letter-spacing: 00.2em;
     text-transform: uppercase;
     background-color: #ffe17f;
-    color:#000000
-}
-
-.info-item-description {
-    width: 694px;
-    height: 174px;
-    margin: auto;
-    display: flex;
+    color:#000000;
+    text-decoration: none;
 }
 
 .current {
@@ -439,17 +441,22 @@ body {
     line-height: 50px;
     text-align: center;
     color:#000000;
+    margin-right: auto;
 }
 
 .info-item-text {
    color:#444444;
+   width: 448px;
+   margin: 0;
+   margin-top: 34px;
+   margin-right: auto;
 }
 
 .delivery-img {
     background-image: url(../images/info/courier.png);
     background-repeat: no-repeat;
-    width: 136px;
-    height: 164px;
+
+    background-position: right;
 }
 
 .guarantee-img {
@@ -923,13 +930,17 @@ footer {
 
 .gray-background {
     margin-top: 35px;
+
     background-color: #f0f0f0;
 }
 
 .catalog-main-size {
   display: flex;
-  width: 1100px;
-  margin: 41px auto;
+  width: 1160px;
+  margin: 0px auto;
+  margin-top: 41px;
+
+  min-height: 1310px;
 
 }
 
@@ -1037,27 +1048,38 @@ footer {
 
 
 .product-list {
+
     background-color: #ffffff;
-    width: 840px;
-    height: 1310px; /*по идеи здесь не должно быть ограничений в высоте (если допустим срабатывает кнопка загрузить еще*/
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
-
-.product-card-container {
     width: 760px;
-    height: 948px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 70px 40px 0px 40px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas:
+    "product-card1 product-card2"
+    "product-card3 product-card4"
+    "load-more load-more"
+    "pagination pagination";
+    grid-template-columns: 360px 360px;
+    grid-template-rows:
+    452px
+    452px
+    55px
+    71px;
+    row-gap: 44px;
+    column-gap: 40px;
+    margin: 0;
+    padding: 70px 40px 78px 40px;
 }
 
-.product-card {
-    width: 360px;
-    height: 452px;
+.product-card1 {
+    grid-area: product-card1;
+}
+.product-card2 {
+  grid-area: product-card2;
+}
+.product-card3 {
+  grid-area: product-card3;
+}
+.product-card4 {
+  grid-area: product-card4;
 }
 
 .product-card-image {
@@ -1111,13 +1133,14 @@ footer {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+    padding-top:18px;
+    padding-bottom:18px ;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    width: 754px;
-    height: 55px;
     border: 3px solid #E5E5E5;
     text-decoration: none;
-    margin: 44px auto;
+    grid-area: load-more;
+
 }
 
 .pagination {
@@ -1127,10 +1150,11 @@ footer {
     width: 760px;
     height: 71px;
     background: #EBEBEB;
-    padding: 0;
-    margin: 0;
-    margin: 44px auto;
     list-style-type: none;
+    grid-area: pagination;
+    padding: 0;
+    justify-content: space-between;
+    margin: 0;
  }
 
  .pagination-next {
@@ -1143,9 +1167,8 @@ footer {
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
-    width: 141px;
-    height: 71px;
-    margin-left: 145.5px;
+
+
     padding: 25px;
 
  }
@@ -1160,17 +1183,13 @@ footer {
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
-    width: 128px;
-    height: 71px;
-    margin-right: 145.5px;
     padding: 25px;
+
  }
 
-.pagination-item {
-    width: 40px;
-    height: 40px;
+.pagination-numbers {
+    padding: 10px 15px;
     text-align: center;
-    padding: auto;
 }
 
  .pagination-numbers {
