@@ -51,32 +51,31 @@ body {
     text-decoration: none;
     color: #000000;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     margin-top: 40px;
-}
-
-.logo {
-    height: 36px;
-    padding: 0px;
-    margin-left: 60px;
-    margin-top: -21px;
 }
 
 .link {
     text-decoration: none;
     color: #000000;
 }
-
 .user-container {
-  width: 1040px;
-  height: 40px;
-  display: flex;
-  flex-direction: row;
-  margin: -30px 60px 0px 60px;
-  padding: 0px;
-  align-content: center;
+    width: 1040px;
+    display: flex;
+    flex-direction: column;
+    margin: -20px 60px 0 60px;
+    padding: 0;
+    height: 140px;
+}
+
+.logo {
+    height: 36px;
+}
+
+.user-container-2 {
+    display: flex;
+    margin-top: 30px;
+    height: 40px;
+    align-items: center;
 }
 
 .header-search {
@@ -88,7 +87,7 @@ body {
 }
 
 .header-search-label {
-  width: 517px;
+    width: 517px;
 }
 
 .search {
@@ -96,8 +95,8 @@ body {
 }
 
 .search-text {
-  font-size: 16px;
-  line-height: 20px;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .main-header-function {
@@ -106,44 +105,42 @@ body {
     vertical-align: center;
 }
 
-.login {
-    background-image: url(../images/login.svg);
-    background-repeat: no-repeat;
-    padding-left: 26px;
-    width: 81px;
+.user-navigation-link {
+    position: relative;
     height: 30px;
-    background-position: left center;
-    margin-left: 27px;
+}
+
+.login {
+    padding-left: 27px;
+    margin-left: 26px;
 }
 
 .compare {
-    background-image: url(../images/compare.svg);
-    background-repeat: no-repeat;
     padding-left: 22px;
-    width: 105px;
-    height: 30px;
-    background-position: left center;
     margin-left: 176px;
 }
 
 .basket {
-    background-image: url(../images/basket.svg);
-    background-repeat: no-repeat;
     padding-left: 28px;
-    width: 99px;
-    height: 30px;
-    background-position: left center;
-    margin-left: 36px;
+    margin-left: auto;
+
 }
 
-.header-info-container {
+.navigation-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: auto;
+}
+
+.user-container-3 {
     width: 1040px;
     height: 50px;
-    margin: 0 auto;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin-top: -100px;;
+    margin-top: 30px;
 }
 
 .products-list-link {
@@ -159,6 +156,10 @@ body {
     width: 293px;
     height: 50px;
     align-items: center;
+}
+
+.open-products-icon {
+    margin-left: auto;
 }
 
 .main-navigation {
@@ -198,17 +199,15 @@ body {
 
   }
 
-  /*стрелки назодятся в неправильном положении,
-   пока не знаю как правильно их разместит(черновой варинат)*/
+  /*rкнопки пока не работаеют*/
 .change-item-button-forward-back {
-    position: absolute;
-    top:25%;
     width: 530px;
-    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px;
+    margin-top: -349px;
+    margin-left: 30px;
+
 }
 
 .button-arrow-back {
@@ -216,6 +215,8 @@ body {
     height: 60px;
     background-image: url(../images/arrow-back.svg);
     background-repeat: no-repeat;
+    background-color: white;
+    border: none;
 }
 
 .button-arrow-forward {
@@ -223,6 +224,8 @@ body {
   height: 60px;
   background-image: url(../images/arrow-forward.svg);
   background-repeat: no-repeat;
+  background-color: white;
+  border: none;
 }
 
 .info-slide-container {
@@ -278,8 +281,26 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-decoration: none;
+    width: 210px;
+    z-index: 1;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.more-info-product::before {
+    content: " ";
     background-color: #ffe17f;
     width: 220px;
+    height: 8px;
+    z-index: -1;
+    position: absolute;
+    left:0;
+    top:25%;
+}
+
+.more-info-product:hover {
+
 }
 
 .change-item-button-circle {
@@ -333,38 +354,76 @@ body {
     letter-spacing: -0.02em;
     text-decoration: none;
     color:#000000;
+    padding-top: 193px;
+    cursor: pointer;
+    position: relative;
 }
 
-.product-type-item {
+.action-camera-box {
+    position: absolute;
     background-color: #ffe17f;
-    height: 253px;
     width: 160px;
+    height: 160px;
+    bottom: 93px;
+    background-image: url(../images/product-type/action-camera.svg);
     background-repeat: no-repeat;
     background-position: center;
+
 }
 
 .vr-box {
     background-image: url("../images/product-type/virtual.svg");
+    position: absolute;
+    background-color: #ffe17f;
+    width: 160px;
+    height: 160px;
+    bottom: 93px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .mono-box {
     background-image: url("../images/product-type/mono.svg");
-}
-
-.action-camera-box {
-    background-image: url("../images/product-type/action-camera.svg");
+    position: absolute;
+    background-color: #ffe17f;
+    width: 160px;
+    height: 160px;
+    bottom: 93px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .fitness-box {
     background-image: url("../images/product-type/fitness.svg");
+    position: absolute;
+    background-color: #ffe17f;
+    width: 160px;
+    height: 160px;
+    bottom: 93px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .smart-watches-box {
     background-image: url("../images/product-type/smart-watch.svg");
+    position: absolute;
+    background-color: #ffe17f;
+    width: 160px;
+    height: 160px;
+    bottom: 93px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .quad-box {
     background-image: url("../images/product-type/copter.svg");
+     position: absolute;
+    background-color: #ffe17f;
+    width: 160px;
+    height: 160px;
+    bottom: 93px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
