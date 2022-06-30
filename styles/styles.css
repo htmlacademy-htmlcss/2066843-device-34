@@ -317,10 +317,21 @@ body {
 
 }
 
-.change-item-button-circle {
+.change-item-link-circle {
     width: 76px;
     display: flex;
     justify-content: space-between;
+}
+
+.circle-change-current {
+    background-color:#000000;
+}
+
+.circle-change-link {
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    border-radius: 50%;
 }
 
 .table-top-item {
@@ -444,9 +455,10 @@ body {
 
 /* INFO*/
 .info {
-    /* background-color: #f0f0f0;
-    height: 289px; */
+    background-color: #f0f0f0;
+    height: 289px;
     margin-top: 172px;
+    position: relative;
 }
 
 .info-container {
@@ -454,6 +466,11 @@ body {
     height: 319px;
     margin: 0 auto;
     display: flex;
+    position: absolute;
+    margin-top: -102px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
 
 
 }
@@ -465,10 +482,6 @@ body {
     width: 280px;
     height: 190px;
     margin: 65px 0;
-
-
-
-
 }
 
 .info-list {
@@ -497,14 +510,34 @@ body {
     text-align: center;
     letter-spacing: 00.2em;
     text-transform: uppercase;
-    background-color: #ffe17f;
     color:#000000;
     text-decoration: none;
+    z-index: 1;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    width: 160px;
+}
+
+.info-link::before {
+    content: " ";
+    background-color: #ffe17f;
+    width: 160px;
+    height: 8px;
+    z-index: -1;
+    position: absolute;
+    left:0;
+    top:25%;
 }
 
 .current {
+    content: " ";
     color: #ffe17f;
     background-color: #000000;
+    padding-top: 10px;
+    padding-right: 120px;
+    padding-bottom: 10px;
+
 }
 
 .info-list-name {
@@ -1114,22 +1147,28 @@ footer {
     margin-left: 206px;
 }
 
+.select-control {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    font-family: "Rubik";
+}
+
 .sort-up-down-container {
-    width: 60px;
-    height: 30px;
-    margin: 0;
-    margin-left: 206px;
+    align-self: auto;
+    margin-right: 40px;
+    margin-left: auto;
 }
 
-.sort-by-up {
-    background-image: url(../images/click-up.svg);
-    background-repeat: no-repeat;
+.sort-by {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 9.5px;
+    cursor: pointer;
 }
 
-.sort-by-down {
-    background-image: url(../images/click-down.svg);
-    background-repeat: no-repeat;
-    transform: rotate(180deg);
+.sort-icon {
+    fill: #000000;
 }
 
 .button-submit-filter {
