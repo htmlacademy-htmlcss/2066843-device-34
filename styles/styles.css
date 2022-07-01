@@ -482,6 +482,17 @@ body {
     width: 280px;
     height: 190px;
     margin: 65px 0;
+    position: relative;
+}
+
+.info-link-container::before {
+  content: " ";
+  position: absolute;
+  height: 319px;
+  width: 7px;
+  background:#000000;
+  left: 280px;
+  top: -64px;
 }
 
 .info-list {
@@ -530,7 +541,20 @@ body {
     top:25%;
 }
 
-.current {
+.current-info-link {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 00.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+    width: 160px;
     content: " ";
     color: #ffe17f;
     background-color: #000000;
@@ -649,7 +673,16 @@ body {
     width: 520px;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
 
+.first-group-contacts::before {
+    content: " ";
+    width: 84px;
+    height: 7px;
+    background-color: #000000;
+    top: 0;
+    left: 0;
 }
 
 .about-us-title {
@@ -687,6 +720,7 @@ body {
     justify-content: space-between;
     margin-top: 30px;
     padding-left: 36px;
+    list-style-type: yellow;
 }
 
 .delivery-company-item {
@@ -707,14 +741,39 @@ body {
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    background-color: #ffe17f;
+    background-color: transparent;
     width: 257px;
     margin-left: 6px;
     margin-top: 40px;
+    position: relative;
+}
+
+.about-us::before {
+  content: " ";
+    position: absolute;
+    height: 8px;
+    width: 270px;
+    background-color: #ffe17f;
+    left: -7px;
+    top: 6px;
+    z-index: -1;
+
 }
 
 .second-group-contacts {
+    display: flex;
     width: 532px;
+    flex-direction: column;
+    position: relative;
+}
+
+.second-group-contacts::before {
+    content: " ";
+    width: 84px;
+    height: 7px;
+    background-color: #000000;
+    top: 0;
+    left: 0;
 }
 
 .contacts-title {
@@ -780,9 +839,8 @@ body {
     justify-content: space-between;
 }
 
-/* не работает margin-top */
 .contacts-form {
-
+    width: 247px;
     font-family: "Raleway" , sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -791,11 +849,24 @@ body {
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    background-color: #ffe17f;
     margin: 0;
     margin-left: 6px;
     margin-top: 40px;
+    position: relative;
 }
+
+.contacts-form::before {
+    content: " ";
+    position: absolute;
+    height: 8px;
+    width: 259px;
+    background-color: #ffe17f;
+    left: -6px;
+    top: 6px;
+    z-index: -1;
+
+  }
+
 
 .subscription {
     background-color: #f0f0f0;
@@ -915,9 +986,21 @@ footer {
     padding: 0;
     margin: 0;
     width: 234px;
+    height: 182px;
     margin-top: 62px;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.footer-address::before {
+  content: " ";
+    position: absolute;
+    width: 80px;
+    height: 7px;
+    background-color: #ffc700;
+    bottom: 0;
+    left: 0;
 }
 
 .footer-address-text {
