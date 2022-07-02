@@ -12,7 +12,7 @@
     <header class="main-header">
 
       <div class="user-container">
-        <a class="logo" href="index.html">
+        <a class="logo button1" href="index.html">
           <img class="logo-img" src="images/device-logo/device-logo-black.svg" width="145" height="36" alt="Логотип магазина 'device'." />
         </a>
         <div class="user-container-2">
@@ -21,17 +21,18 @@
             <input class="search" type="search" placeholder="Текст поиска" name="текст поиска"/>
             <button class="search-text" type="submit">Найти</button>
           </form>
-          <a class="user-navigation-link login link" href="#">
+          <a class="user-navigation-link login link button1" href="#">
             <svg class="navigation-icon" aria-hidden="true" focusable="true" width="14" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.5 12.39h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.5-3.5-3.5s-3.5 1.6-3.5 3.5c0 1.3.7 2.4 1.7 3-2.6.7-4.5 2.9-4.7 5.5Z" fill="#000"/></svg>
             Войти
           </a>
-          <a class="user-navigation-link compare link" href="#">
+          <a class="user-navigation-link compare link button1" href="#">
             <svg class="navigation-icon" aria-hidden="true" focusable="true" width="10" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 .39H4v12h2v-12ZM2 4.39H0v8h2v-8ZM10 3.39H8v9h2v-9Z" fill="#000"/></svg>
             Сравнить
           </a>
-          <a class="user-navigation-link basket link" href="#">
-            <svg class="navigation-icon" aria-hidden="true" focusable="true" width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.3 5.39-3.5.2L8.6.69c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1l1.9-6.9v-.2c0-.4-.3-.8-.7-.8ZM8 2.29l2.2 3.2H5.9L8 2.29Z" fill="#000"/></svg>
+          <a class="user-navigation-link basket link button1" href="#">
+            <svg class="navigation-icon-basket " aria-hidden="true" focusable="true" width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.3 5.39-3.5.2L8.6.69c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1l1.9-6.9v-.2c0-.4-.3-.8-.7-.8ZM8 2.29l2.2 3.2H5.9L8 2.29Z" fill="#000"/></svg>
             Корзина
+            <span class="basket-number">2</span>
           </a>
         </div>
 
@@ -59,9 +60,9 @@
 
 
           <nav class="main-navigation">
-            <a class="main-navigation-link link" href="#">доставка</a>
-            <a class="main-navigation-link link" href="#">гарантия</a>
-            <a class="main-navigation-link link" href="#">контакты</a>
+            <a class="main-navigation-link link button1" href="#">доставка</a>
+            <a class="main-navigation-link link button1" href="#">гарантия</a>
+            <a class="main-navigation-link link button1" href="#">контакты</a>
           </nav>
         </div>
       </div>
@@ -73,8 +74,8 @@
         <div class="picture-slide-container">
           <img class="top-item-picture" width="560" height="560" src="images/gallery/gallery-1.png" alt="квадракопрет">
           <div class="change-item-button-forward-back">
-            <a href="#" class="button-arrow-back"></a>
-            <a href="#" class="button-arrow-forward"></a>
+            <a href="#" class="button-arrow-back button1"></a>
+            <a href="#" class="button-arrow-forward button1"></a>
           </div>
         </div>
         <div class="info-slide-container">
@@ -82,15 +83,15 @@
           <h3 class="top-main-header">Порхает как бабочка, жалит как пчела!</h3>
           <p class="top-item-text">Этот обычный, на первый взгляд, квадроптер оснещен мощным лазером, замаскированным под стандартную камеру</p>
           <div class="more-info-change-slide">
-            <a class="more-info-product link" href="#">Подробнее</a>
+            <a class="more-info-product link button2 yellow-button" href="#">Подробнее</a>
             <div class="change-item-link-circle">
-              <a href="#" class="circle-change-link circle-change-current">
+              <a href="#" class="circle-change-link circle-change-current button1">
                 <!-- <span class="vissually-hidden">1</span> -->
               </a>
-              <a href="#" class="circle-change-link">
+              <a href="#" class="circle-change-link button1">
                 <!-- <span class="vissually-hidden">2</span> -->
               </a>
-              <a href="#" class="circle-change-link">
+              <a href="#" class="circle-change-link button1">
                 <!-- <span class="vissually-hidden">3</span> -->
               </a>
             </div>
@@ -143,8 +144,8 @@
 
       <!-- получается пустой тег span, через псевдо элемент не смог  -->
       <section class="product-type">
-        <a class="product-type-link product-type-item" href="#">
-          <span class="vr-box"></span> Виртуальная реальность
+        <a class="product-type-link product-type-item vr-box" href="#">
+           Виртуальная реальность
         </a>
         <a class="product-type-link product-type-item link" href="catalog.html">
           <span class="mono-box"></span> Моноподы для селфи
@@ -227,7 +228,7 @@
             <li class="delivery-company-item">СДИК</li>
             <li class="delivery-company-item">ТоксБерри</li>
           </ul>
-          <a class="about-us link" href="#">подробнее о нас</a>
+          <a class="about-us link button2" href="#">подробнее о нас</a>
         </div>
 
         <div class="second-group-contacts">
@@ -252,7 +253,7 @@
               сб—вс: с <time>10:00</time> до <time>19:00</time>
             </li>
           </ul>
-          <a class="contacts-form link" href="#">Напишите нам</a>
+          <a class="contacts-form link button2" href="#">Напишите нам</a>
         </div>
 
       </section>
