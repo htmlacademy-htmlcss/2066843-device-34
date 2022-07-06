@@ -93,39 +93,79 @@
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
             <h2 class="filter">фильтр:</h2>
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Цвет</legend>
+            <fieldset class="filter-field">
+              <legend class="visually-hidden">Стоимость</legend>
+              <p class="filter-title">Стоимость</p>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left:128px; width:72px">
+                    <button type="button" class="range-toggle toggle-min">
+
+                    </button>
+                    <button type="button" class="range-toggle toggle-max">
+
+                    </button>
+                  </div>
+                </div>
+
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    от
+                    <input class="range-input" type="number" value="0" name="min-price">
+                  </label>
+                  <label class="catalog-filter-label">
+                    до
+                    <input class="range-input" type="number" value="5000" name="max-price">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter-field">
+              <legend class="visually-hidden">Цвет</legend>
+              <p class="filter-title">Цвет</p>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="controll">
-                    <input class="filter-item" type="checkbox" name="Черный" checked>Черный
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="Черный" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Черный</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="controll">
-                    <input class="filter-item" type="checkbox" name="Белый" checked>Белый
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="Белый" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Белый</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="controll">
-                    <input class="filter-item" type="checkbox" name="Синий">Синий
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="Синий">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Синий</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="controll">
-                    <input class="filter-item" type="checkbox" name="Красный">Красный
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="Красный">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Красный</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="controll">
-                    <input class="filter-item" type="checkbox" name="Розовый">Розовый
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="Розовый">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Розовый</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Bluetooth</legend>
+            <fieldset class="filter-field">
+              <legend class="visually-hidden">Bluetooth</legend>
+              <p class="filter-title">Bluetooth</p>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="controll">
