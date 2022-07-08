@@ -242,7 +242,14 @@ body {
   right: -77px;
   top: 36px;
   color: #FFFFFF;
+  display: none;
 }
+
+.popover-open {
+  display: block;
+}
+
+
 
 .popover-content {
   height: 100%;
@@ -250,25 +257,67 @@ body {
   flex-direction: column;
 }
 
-.popover-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.popover-content:after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/popover-arrow.svg);
+  background-repeat: no-repeat;
+  background-color: #AF4fff;
+  top: -6px;
+  left: 50%;
+  margin-left: -8px;
+
+}
+
+.popover-item-container {
+  margin:20px;
+  display: flex;
+  position: relative;
 }
 
 .popover-item {
-  height: 83px;
   padding-left: 62px;
-  padding-right: 67px;
-  margin: 20px 20px 0 20px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-decoration: none;
+  line-height: 20px;
+  min-height: 40px;
+  max-width: 151px;
+
+}
+
+.delete-button {
+  background: transparent;
+  cursor: pointer;
+  margin-left: auto;
+  position: absolute;
+  right: 0;
   top: 0;
+  padding: 0;
+  border: none;
+}
+
+.popover-effects:hover {
+  opacity: .6;
+}
+
+.popover-effects:active {
+  opacity: .3;
+}
+
+.popover-effects:focus {
+  outline: 2px solid #AF4fff;
+  outline-offset: 2px;
 }
 
 .popover-item1 {
   background-image: url(../images/catalog/catalog-1.jpg);
   background-repeat: no-repeat;
   background-size: 39px 43px;
-
 }
 
 .popover-item2 {
@@ -299,8 +348,22 @@ body {
   border: none;
   margin: 20px;
   cursor: pointer;
-
 }
+
+.popover-open-basket:hover {
+  background-color: #ffe17f;
+}
+
+.popover-open-basket:active {
+  color: rgba(0, 0, 0, 30%);
+  background-color: #ffe17f;
+}
+
+.popover-open-basket:focus {
+  outline: 2px solid #AF4fff;
+  outline-offset: 2px;
+}
+
 
 .button1:hover {
   opacity: 0.6;
@@ -317,10 +380,13 @@ body {
 
 .user-container-3 {
   width: 1040px;
-  height: 50px;
   display: flex;
   align-items: center;
   margin-top: 30px;
+}
+
+.product-catalog-select-wrapper:focus-within > .popover-header-catalog {
+  display: flex;
 }
 
 .products-list-link {
@@ -333,9 +399,73 @@ body {
   letter-spacing: 0.2em;
   color: #000000;
   text-decoration: none;
-  width: 293px;
+  padding:15px 57px 15px 0;
+  background-color: transparent;
+  position: relative;
+}
+
+
+.plus-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 2px solid #000000;
+  width: 50px;
   height: 50px;
-  align-items: center;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.plus-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.plus-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+  transform: rotate(90deg);
+  transition: transform 0.2s ease-in;
+}
+
+.products-list-link:hover .plus-button{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.products-list-link:active .plus-button::after {
+  transform: rotate(0deg);
+  opacity: 0;
+  transition: opacity 0.2s ease-in, transform 0.2s ease-in ;
+}
+
+.products-list-link:focus{
+  outline: 2px solid #AF4fff;
+  outline-offset: 2px;
+}
+
+
+.popover-header-catalog {
+
 }
 
 .catalog-item:focus-within .subcatalog {
@@ -445,8 +575,25 @@ margin-top: 80px;
   line-height: 50px;
   font-style: normal;
   margin: 0;
-  margin-top: 121px;
+  padding-top: 121px;
+  position: relative;
+  z-index: 1;
+}
 
+.info-slide-container::before {
+  content: "01";
+  position: absolute;
+  width: 250px;
+  height: 135px;
+  right: 49px;
+  top: 270px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #FFFFFF;
+  z-index: 1;
 }
 
 .top-item-text {
@@ -1928,7 +2075,7 @@ grid-area: product-card4;
   text-align: right;
   color: #444444;
 }
-/* не получается поставить тектст в центр*/
+
 .link-load-more {
   font-family: "Raleway", sans-serif ;
   font-style: normal;

@@ -38,15 +38,33 @@
             Корзина
             <span class="basket-number">2</span>
           </a>
-          <div class="popover popover-basket">
+
+          <!-- add "popover-open" -->
+          <div class="popover popover-basket popover-op">
             <div class="popover-content">
-              <ul class="popover-list">
-                <li class="popover-item popover-item1">Любительская селфи-палка</li>
-                <li class="popover-item popover-item2">Профессиональная селфи-палка</li>
-              </ul>
+              <div class="popover-item-container">
+                <a class="popover-item popover-item1 popover-effects" href="catalog.html">
+                  Любительская селфи-палка
+                </a>
+                <button type="button" class="delete-button popover-effects">
+                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z" fill="white"/>
+                    </svg>
+                </button>
+              </div>
+              <div class="popover-item-container">
+                <a class="popover-item popover-item2 popover-effects" href="catalog.html">
+                  Профессиональная селфи-палка
+                </a>
+                <button type="button" class="delete-button popover-effects">
+                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z" fill="white"/>
+                    </svg>
+                </button>
+              </div>
               <div class="popover-total">
-                <span class="quantity">Товаров:2</span>
-                <span class="price">Сумма:2000&#8381</span>
+                <span class="quantity">Товаров: 2</span>
+                <span class="price">Сумма: 2000&#8381</span>
               </div>
               <button type="button" class="popover-open-basket">открыть корзину</button>
             </div>
@@ -54,11 +72,13 @@
         </div>
 
         <div class="user-container-3">
+          <div class="product-catalog-select-wrapper">
           <a class="products-list-link link" href="#">
             Каталог товаров
+            <span class="plus-button"></span>
           </a>
-          <!-- <div class="popover popover-catalog"> -->
-            <ul class="subcatalog">
+           <div class="popover2 popover-header-catalog">
+             <ul class="subcatalog">
               <li class="catalog-item">
                 <a class="products-link" href="#">Виртуальная реальность</a>
               </li>
@@ -78,6 +98,7 @@
                 <a class="products-link" href="#">Квадракоптеры</a>
               </li>
             </ul>
+          </div>
           </div>
 
 
@@ -101,20 +122,16 @@
           </div>
         </div>
         <div class="info-slide-container">
-          <!-- <span class="top-main-numbers">01</span> -->
           <h3 class="top-main-header">Порхает как бабочка, жалит как пчела!</h3>
           <p class="top-item-text">Этот обычный, на первый взгляд, квадроптер оснещен мощным лазером, замаскированным под стандартную камеру</p>
           <div class="more-info-change-slide">
             <a class="more-info-product link button2" href="#">Подробнее</a>
             <div class="change-item-link-circle">
               <a href="#" class="circle-change-link circle-change-current button1">
-                <!-- <span class="vissually-hidden">1</span> -->
               </a>
               <a href="#" class="circle-change-link button1">
-                <!-- <span class="vissually-hidden">2</span> -->
               </a>
               <a href="#" class="circle-change-link button1">
-                <!-- <span class="vissually-hidden">3</span> -->
               </a>
             </div>
           </div>
@@ -126,42 +143,6 @@
           </dl>
         </div>
       </article>
-
-        <!-- <article class="top-main-article">
-          <span class="top-main-numbers">02</span>
-          <h3 class="top-main-header">Худеем правильно!</h3>
-          <img class="top-item-picture" width="560" height="560" src="images/gallery/gallery-2.png" alt="фитнес-браслет">
-          <p class="top-item-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-          <a class="more-info-product link" href="#">Подробнее</a>
-          <table class="table-top-item">
-            <tr>
-              <td class="table-data-info">48 часов</td>
-            </tr>
-            <tr>
-              <th class="table-header">Без подзарядки</th>
-            </tr>
-          </table>
-        </article>
-        <article class="top-main-article">
-          <span class="top-main-numbers">03</span>
-          <h3 class="top-main-header">Делай селфи, как Бен Стиллер!</h3>
-          <img class="top-item-picture" width="560" height="560" src="images/gallery/gallery-3.png" alt="монопод">
-          <p class="top-item-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-          <a class="more-info-product link" href="#">Подробнее</a>
-          <table class="table-top-item">
-            <tr>
-              <td class="table-data-info">8,5 м</td>
-              <td class="table-data-info">5 кг</td>
-              <td class="table-data-info">Карбон</td>
-            </tr>
-            <tr>
-              <th class="table-header">Длина палки</th>
-              <th class="table-header">Вес палки</th>
-              <th class="table-header">Материал</th>
-            </tr>
-          </table>
-        </article>
-      </section> -->
 
       <section class="product-type">
         <a class="product-type-link " href="#">
