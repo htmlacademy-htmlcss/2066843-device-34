@@ -2231,6 +2231,16 @@ min-height: 1310px;
   border-radius: 50%;
   }
 
+.control-mark2::before {
+  position: absolute;
+  top:3px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+}
+
+
+
 .control-input2[type="radio"]:checked + .control-mark2::before {
   position: absolute;
   content: " ";
@@ -2280,6 +2290,8 @@ min-height: 1310px;
   outline: 2px solid #AF4fff;
   outline-offset: 2px;
 }
+
+
 
 
 .button-submit-filter {
@@ -2428,48 +2440,20 @@ grid-area: product-card4;
   position: relative;
 }
 
-.product-card-link:hover{
-  opacity: .3;
+.popover-card {
+  position: relative;
 }
 
-.product-card-link:hover::before  {
-  content: "подробнее";
+.popover-button {
+  display: none;
   position: absolute;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
   top: 180px;
-  color: rgba(0, 0, 0, 1);
-  opacity: 1;
-  z-index: 2;
-}
-
-.product-card-link:hover::after {
-  content: "";
-  position:absolute;
   background-color: #ffe17f;
-  width: 220px;
-  height: 8px;
-  left: 0;
-  right: 0;
-  top: 186px;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
+  left: 70px;
 }
 
-.product-card-link:active::before  {
-  content: "подробнее";
-  position: absolute;
+.popover-button-link {
+  width: 220px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -2478,28 +2462,31 @@ grid-area: product-card4;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  top: 180px;
-  color: rgba(0, 0, 0, 1);
-  opacity: 1;
-  z-index: 2;
+  text-decoration: none;
+  color: #000000;
+  position: absolute;
 }
 
-.product-card-link:active::after {
-  content: "";
-  position:absolute;
-  background-color: #ffc700;
-  width: 220px;
+.popover-button-link::before {
+  content: " ";
+  width:220px;
   height: 8px;
+  z-index: -1;
+  background-color: #ffe17f;
+  position: absolute;
   left: 0;
-  right: 0;
-  top: 186px;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.popover-card:hover .popover-button{
+  display: block;
+  z-index: 4;
+}
+
+.popover-card:hover .product-card-link{
+  opacity: .3;
 }
 
 .product-card-link:focus {
